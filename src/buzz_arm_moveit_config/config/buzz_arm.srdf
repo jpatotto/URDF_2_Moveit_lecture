@@ -32,6 +32,29 @@
     <group_state name="closed" group="gripper_group">
         <joint name="Revolute_RFinger" value="0.6283"/>
     </group_state>
+    <!-- To add your own named pose: drag the arm to it in RViz, echo
+         /joint_states once, and copy the positions into a new group_state.
+         Keep every value strictly inside the URDF limit bounds, with a few
+         degrees of margin for servo tracking error. (XML comments cannot
+         contain a double dash, so command flags are spelled out in README.md.) -->
+    <!-- Part 2 goal pose: arm tilted forward and down, tool0 near
+         (0.39, 0.15, 0.26) in base_link. -->
+    <group_state name="reach_low" group="arm_group">
+        <joint name="Revolute_1" value="0.0"/>
+        <joint name="Revolute_2" value="2.6"/>
+        <joint name="Revolute_3" value="1.55334"/>
+        <joint name="Revolute_4" value="1.58825"/>
+        <joint name="Revolute_5" value="1.50098"/>
+    </group_state>
+    <!-- Example of a third pose. The lab only uses home and reach_low; this one
+         shows how to add your own if you want another goal for the benchmark. -->
+    <group_state name="reach_forward" group="arm_group">
+        <joint name="Revolute_1" value="0.00838"/>
+        <joint name="Revolute_2" value="2.01551"/>
+        <joint name="Revolute_3" value="2.08253"/>
+        <joint name="Revolute_4" value="1.06046"/>
+        <joint name="Revolute_5" value="1.42070"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="tool0" group="gripper_group"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->

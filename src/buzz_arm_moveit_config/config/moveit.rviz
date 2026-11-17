@@ -133,7 +133,7 @@ Visualization Manager:
         Show Robot Visual: true
         Show Trail: true
         State Display Time: 0.05 s
-        Trail Step Size: 10
+        Trail Step Size: 5
         Trajectory Topic: display_planned_path
         Use Sim Time: false
       Planning Metrics:
@@ -254,7 +254,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.2873538732528687
+      Distance: 1.2082252502441406
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -269,10 +269,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.45999830961227417
+      Pitch: 0.6049983501434326
       Target Frame: base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 2.2069973945617676
+      Yaw: 1.9269969463348389
     Saved: ~
 Window Geometry:
   Displays:
